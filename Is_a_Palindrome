@@ -1,0 +1,30 @@
+package pepe;
+
+public class pepe {
+	
+	 public static void main(String[] args){
+		 
+	 }
+	 
+	 public boolean isPalindrome(int x) {
+	
+    
+    int ultimonumero = 0;
+	
+	String number = String.valueOf(x);
+
+    String[] digits = number.split("(?<=.)");
+
+    for(int i = 0; i < digits.length; i++) {
+        ultimonumero = i;
+    }
+    
+    if(digits[0].equals(digits[ultimonumero])) {
+    	
+    	return true;
+    	
+    	
+    }
+	return false;
+
+}}
